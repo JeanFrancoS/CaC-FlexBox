@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proyecto</title>
+        <link rel="stylesheet" href="./css/style-flex.css">
+        <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    </head>
+    <body class="body">
+        <header class="header">
+            <div class="menu">
+                <div class="logo">
+                    <img src="./assets/img/codoacodoRecortada.png" alt="Codo a Codo">
+                    <h2>Conf Bs.As.</h2>
+                </div>
+                <nav class = "navHeader">   
+                    <ul class="listaNav">
+                        <li class="listaItem"><a href="#conferenciaBsAs" class="link confer">La conferencia</a></li>
+                        <li class="listaItem"><a href="#conoceOradores" class="link">Los oradores</a></li>
+                        <li class="listaItem"><a href="#bsAsOctubre" class="link">El lugar y la fecha</a></li>
+                        <li class="listaItem"><a href="#form" class="link">Conviértete en orador</a></li>
+                        <li class="listaItem"><a href="#" class="link compraTicket">Comprar tickets</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <section id="conferenciaBsAs" class="conferenciaBsAs">
+                <div class="confBsAs">
+                    <h1>Conf Bs As</h1>
+                    <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están crando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+                    <div class="btns">
+                        <a class="btn bOrador">Quiero ser orador</a>
+                        <a class="btn bComprarTicket">Comprar tickets</a>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <main>
+            <section class="conoceOradores" id="conoceOradores">
+                <h2 class="titConoce">CONOCE A LOS<br><span class="txtOradores">ORADORES</span></h2>
+                <div class="oradores">
+                    <div class="orador">
+                        <img src="./assets/img/steve.jpg" alt="Steve Jobs">
+                        <div class="oradorDiv">
+                            <span class="subtitulosOrador">
+                                <h5 class="js">JavaScript</h5>
+                                <h5 class="react">React</h5>
+                            </span>
+                            <div class="textOrador">
+                                <h3 class="nombreOrador">Steve Jobs</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti expedita saepe iste vitae rem reiciendis quos, explicabo sint facere incidunt, modi blanditiis animi voluptatibus dolorum nulla! Pariatur provident sit et?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orador">
+                        <img src="./assets/img/bill.jpg" alt="Bill Gates">
+                        <div class="oradorDiv">
+                            <span class="subtitulosOrador">
+                                <h5 class="js" id="js">JavaScript</h5>
+                                <h5 class="react">React</h5>
+                            </span>
+                            <div class="textOrador">
+                                <h3 class="nombreOrador">Bill Gates</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti expedita saepe iste vitae rem reiciendis quos, explicabo sint facere incidunt, modi blanditiis animi voluptatibus dolorum nulla! Pariatur provident sit et?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orador">
+                        <img src="./assets/img/ada.jpeg" alt="Ada Lovelace">
+                        <div class="oradorDiv">
+                            <span class="subtitulosOrador">
+                                <h5 class="negocios" id="">Negocios</h5>
+                                <h5 class="startups">Startups</h5>
+                            </span>
+                            <div class="textOrador">
+                                <h3 class="nombreOrador">Ada Lovelace</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti expedita saepe iste vitae rem reiciendis quos, explicabo sint facere incidunt, modi blanditiis animi voluptatibus dolorum nulla! Pariatur provident sit et?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bsAsOctubre" id="bsAsOctubre">
+                <div class="imgHonolulu">
+                    <img src="./assets/img/honolulu.jpg" alt="paisaje honolulu">
+                </div>
+                <div class="textOctubre">
+                    <h4>Bs As - Octubre</h4>
+                    <p>Buenos Aires es la provincia y la localidad más grande del estado de Argentina, en los Estados Unidos, Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condao de Honolulu han formado una ciuda-condado consolidada que cubre toda la ciudad (aproximadamente 600km<sup>2</sup> de superficie).</p> 
+                    <br><button class="conoceMas">Conocé más</button>
+                </div>  
+            </section>
+            <section class="form" id="form">
+                <h2><span class="textConvertirse">CONVIÉRTETE EN UN</span><br><span class="textOradorTitulo"> ORADOR</span></h2>
+                <p class="pForm">Anótate como orador para dar una <abbr title="charla ignite">charla ignite</abbr>. Cuéntanos de qué quieres hablar!</p>
+                <form class="formulario" action="formulario">
+                    <div class="txtForm">
+                        <input class="txt" type="text" placeholder="Nombre" required>
+                        <input class="txt" type="text" placeholder="Apellido" required>
+                    </div>
+                    <div class="txtAreaForm">
+                        <textarea class="txtAreaOrador" name="textAreaOrador" id="textAreaOrador" cols="90" rows="3" placeholder="Sobre qué quieres hablar?" required></textarea>
+                    </div>
+                    <p>Recuerda incluir un título para tu charla</p>
+                    <div class="btnEnviarForm">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </section>
+
+        </main>
+        <footer>
+            <div class="footerDiv">
+                <div class="footerAnclas">
+                    <a class="anclaFooter" href="">Preguntas <br> frecuentes</a>
+                    <a class="anclaFooter" href="">Contáctanos</a>
+                    <a class="anclaFooter" href="">Prensa</a>
+                    <a class="anclaFooter" href="">Conferencias</a>
+                    <a class="anclaFooter" href="">Términos y  <br>condiciones</a>
+                    <a class="anclaFooter" href="">Privacidad</a>
+                    <a class="anclaFooter" href="">Estudiantes</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
